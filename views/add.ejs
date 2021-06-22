@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add pruducts
+
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <h1 class="text-center">Add your products</h1>
+
+
+
+      <form action="/add" method="POST" enctype="multipart/form-data">
+        <div class="form-group mx-4">
+            <label for="title">product name</label>
+            <input type="text"name="item"  class="form-control" id="title" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+        </div>
+
+        <div class="form-group mx-4">
+            <label for="description">product detail</label>
+            <textarea class="form-control" name="desc" id="description" rows="3"></textarea>
+        </div>
+   <input type="file" name="image" value="upload image" id="">
+        <button type="submit" id="add" class="btn btn-primary mx-4">Add to the product  list</button>
+        <!-- gave the id "add" to the button to perform event on this button -->
+    </form>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product
+
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <h1 class="text-center">YOUR ITEMS</h1>
+   <!--  <table class="table">
+        <thead>
+            <tr>
+                
+                <th scope="col">product</th>
+                <th scope="col">product Desciption</th>
+                <th scope="col"> Action</th>
+
+            </tr>
+        </thead>-->
+        <!-- gave id to the table body to display the table content by the help of it
+        <tbody id="tablebody">-->
+
+           <!-- <%product.forEach((items,index)=>{%>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td> <button class="btn btn-primary"></button></td>
+                    <!-- button.btn.btn-primary -->
+    
+    
+               <!-- </tr>
+
+
+          <% }
+            
+            )  %>
+        
+
+        </tbody> 
+    </table> -->
+
+
+
+    <div class="row container-fluid">
+    <%product.forEach((items,index)=>{%>
+        
+            
+
+                
+                  <div class="card my-2 mx-2 card"  style="width: 10rem;" >
+                    <img class="card-img-top" src="<%=items.image %>" >
+                    <div class="card-body" >
+                      <h5 class="card-title"><%=items.item %></h5>
+                      <p class="card-text"><%=items.desc %></p>
+                      <a href="#" type="submit" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+           
+        
+          
+       
+
+  <% }
+    
+    )  %>
+
+  </div>
+
+
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+
+
+</body>
+</html>
